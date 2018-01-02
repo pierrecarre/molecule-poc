@@ -6,5 +6,8 @@ node {
         stage('Lint') {
             sh 'molecule lint'
         }
+        stage('Test') {
+            sh 'molecule test'
+        }
     }
 }
