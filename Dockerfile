@@ -6,5 +6,6 @@ ENV MOLECULE_VERSION 2.5.0
 RUN yum -y install epel-release; yum install -y gcc python-pip python-devel openssl-devel git; yum clean all;
 
 RUN pip install molecule==${MOLECULE_VERSION}
+RUN pip install docker-py
 
 CMD [ "/bin/bash" ]
